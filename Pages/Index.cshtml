@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div class="contenedor">
+    <div>
+        <div class="baner">
+            <h1> Analizador de Texto </h1>
+            <input class="form-control" id="string" type="text" />
+            <button id="Analizer"> Analizar </button>
+        </div>
+        <div class="Resultados">
+            <div style="display:flex; height:50%;">
+                <div class="contadores"><label>Consonantes = </label><label id="con"> 0</label></div>
+                <div class="contadores"><label>Vocales = </label><label id="voc"> 0</label></div>
+                <div class="contadores"><label>Mayúsculas = </label><label id="may"> 0</label></div>
+                <div class="contadores"><label>Minúsculas = </label><label id="min"> 0</label></div>
+            </div>
+            <div style="display:flex; height:50%;">
+                <div class="contadores"><label>Números = </label><label id="nun"> 0</label></div>
+                <div class="contadores"><label>Otros = </label><label id="oto"> 0</label></div>
+                <div class="contadores"><label>Palabras = </label><label id="pal"> 0</label></div>
+            </div>          
+        </div>
+    </div>
+</div>
